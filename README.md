@@ -1,6 +1,6 @@
 # manual-qa-loop
 
-> A portable [Agent Skill](https://agentskills.io) that turns "test the app thoroughly" into a repeatable process: explore it like an expert QA tester, fix any real bugs with a regression test, write a dated report, and keep running rounds until two in a row find nothing. Works in Claude Code, Cursor, Codex CLI, and any other Agent-Skills-compatible tool.
+> A portable [Agent Skill](https://agentskills.io) that turns "test the app thoroughly" into a repeatable process: explore it like an expert QA tester, fix any real bugs with a regression test, write a dated report, and keep running rounds until three in a row find nothing. Works in Claude Code, Cursor, Codex CLI, and any other Agent-Skills-compatible tool.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
