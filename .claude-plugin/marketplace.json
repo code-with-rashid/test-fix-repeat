@@ -1,0 +1,8 @@
+{
+  "name": "manual-qa-loop",
+  "description": "A Claude Code skill that runs iterative, manual end-to-end QA on a running app until convergence.",
+  "owner": { "name": "Rashid Mahmood" },
+  "plugins": [
+    { "name": "manual-qa-loop", "source": "./skills/manual-qa-loop" }
+  ]
+}
