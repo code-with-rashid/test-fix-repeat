@@ -1,4 +1,4 @@
-# manual-qa-loop
+# test-fix-repeat
 
 > A portable [Agent Skill](https://agentskills.io) that turns "test the app thoroughly" into a repeatable process: explore it like an expert QA tester, fix any real bugs with a regression test, write a dated report, and keep running rounds until three in a row find nothing. Works in Claude Code, Cursor, Codex CLI, and any other Agent-Skills-compatible tool.
 
@@ -27,8 +27,8 @@ This is a different technique from automated/instrumented hardening (coverage, m
 Inside a Claude Code session, in any project:
 
 ```
-/plugin marketplace add code-with-rashid/manual-qa-loop
-/plugin install manual-qa-loop@manual-qa-loop
+/plugin marketplace add code-with-rashid/test-fix-repeat
+/plugin install test-fix-repeat@test-fix-repeat
 ```
 
 Then run `/reload-plugins` (or start a fresh `claude` session) — a plugin installed
@@ -40,44 +40,44 @@ By default this installs at **user scope** (available in every project). To scop
 to just the current project instead, run the equivalent from a terminal:
 
 ```bash
-claude plugin marketplace add code-with-rashid/manual-qa-loop --scope project
-claude plugin install manual-qa-loop@manual-qa-loop --scope project
+claude plugin marketplace add code-with-rashid/test-fix-repeat --scope project
+claude plugin install test-fix-repeat@test-fix-repeat --scope project
 ```
 
-To remove it later: `/plugin uninstall manual-qa-loop@manual-qa-loop`.
+To remove it later: `/plugin uninstall test-fix-repeat@test-fix-repeat`.
 
 <details>
 <summary>Alternative: manual copy (no plugin system)</summary>
 
 This is a folder with a `SKILL.md` — no build step, no dependencies. **Clone this
-repo first**, then copy `skills/manual-qa-loop/` into a `.claude/skills/` directory.
+repo first**, then copy `skills/test-fix-repeat/` into a `.claude/skills/` directory.
 
 #### macOS / Linux (bash/zsh)
 
 ```bash
-git clone https://github.com/code-with-rashid/manual-qa-loop.git ~/manual-qa-loop
+git clone https://github.com/code-with-rashid/test-fix-repeat.git ~/test-fix-repeat
 
 # per-project (recommended)
 mkdir -p /path/to/your-repo/.claude/skills
-cp -r ~/manual-qa-loop/skills/manual-qa-loop /path/to/your-repo/.claude/skills/
+cp -r ~/test-fix-repeat/skills/test-fix-repeat /path/to/your-repo/.claude/skills/
 
 # per-user (available in every project, instead of per-project)
 mkdir -p ~/.claude/skills
-cp -r ~/manual-qa-loop/skills/manual-qa-loop ~/.claude/skills/
+cp -r ~/test-fix-repeat/skills/test-fix-repeat ~/.claude/skills/
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/code-with-rashid/manual-qa-loop.git $HOME\manual-qa-loop
+git clone https://github.com/code-with-rashid/test-fix-repeat.git $HOME\test-fix-repeat
 
 # per-project
 New-Item -ItemType Directory -Force -Path "C:\path\to\your-repo\.claude\skills" | Out-Null
-Copy-Item -Recurse -Force "$HOME\manual-qa-loop\skills\manual-qa-loop" "C:\path\to\your-repo\.claude\skills\"
+Copy-Item -Recurse -Force "$HOME\test-fix-repeat\skills\test-fix-repeat" "C:\path\to\your-repo\.claude\skills\"
 
 # per-user
 New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills" | Out-Null
-Copy-Item -Recurse -Force "$HOME\manual-qa-loop\skills\manual-qa-loop" "$HOME\.claude\skills\"
+Copy-Item -Recurse -Force "$HOME\test-fix-repeat\skills\test-fix-repeat" "$HOME\.claude\skills\"
 ```
 
 </details>
@@ -96,7 +96,7 @@ plain language ("test the app thoroughly", "find and fix bugs end to end", "run 
 loop") or invoke it directly:
 
 ```
-/manual-qa-loop
+/test-fix-repeat
 ```
 
 It figures out how to run the app, how to verify a fix (lint/test/build), and where

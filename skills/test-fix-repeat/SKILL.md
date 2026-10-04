@@ -1,11 +1,11 @@
 ---
-name: manual-qa-loop
-description: Run iterative end-to-end manual QA on a running app - explore it like an expert tester, write a dated report each round, fix any real bugs found (with regression tests), and keep repeating rounds until three in a row find zero issues. Use when the user asks to "test the app thoroughly", "find and fix bugs end to end", "run a QA cycle/loop", or similar open-ended quality passes over an app.
+name: test-fix-repeat
+description: Test, fix, repeat - run iterative end-to-end QA-and-fix rounds on a running app: explore it like an expert tester, write a dated report each round, fix any real bugs found (with regression tests), and keep repeating rounds until three in a row find zero issues. Use when the user asks to "test the app thoroughly", "find and fix bugs end to end", "run a QA cycle/loop", or similar open-ended quality passes over an app.
 version: 1.0.0
 license: MIT
 ---
 
-# Manual QA loop
+# Test, fix, repeat
 
 A repeatable, framework-agnostic process for hardening an app through successive
 rounds of manual end-to-end testing. Each round: explore, find, fix, verify,
