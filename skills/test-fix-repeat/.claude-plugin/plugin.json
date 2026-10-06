@@ -1,0 +1,9 @@
+{
+  "name": "test-fix-repeat",
+  "description": "Tests a running app end to end, fixes real bugs with regression tests, and repeats until three clean rounds in a row.",
+  "version": "1.0.1",
+  "license": "MIT",
+  "author": { "name": "Rashid Mahmood" },
+  "homepage": "https://github.com/code-with-rashid/test-fix-repeat",
+  "keywords": ["qa", "testing", "e2e", "bug-fixing", "regression-tests"]
+}
